@@ -65,10 +65,12 @@ class FlutterHlVnpayPlugin : FlutterPlugin, ActivityAware, PluginRegistry.Activi
         val paymentUrl = params["paymentUrl"] as String
         val scheme = params["scheme"] as String
         val tmnCode = params["tmn_code"] as String
+        val isSandBox = params["isSandbox"] as Boolean
         val intent = Intent(flutterPluginBinding!!.applicationContext, VNP_AuthenticationActivity::class.java).apply {
             putExtra("url", paymentUrl)
             putExtra("scheme", scheme)
             putExtra("tmn_code", tmnCode)
+            putExtra("is_sandbox",isSandBox)
         }
         VNP_AuthenticationActivity.setSdkCompletedCallback { action ->
             Log.wtf("VNP_AuthenticationActivity", "action: $action")

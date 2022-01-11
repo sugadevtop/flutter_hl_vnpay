@@ -22,7 +22,7 @@ class FlutterHlVnpay {
     required String paymentUrl,
     required String tmnCode,
     String scheme = '',
-    bool isSandbox = true,
+    required bool isSandbox,
     String backAlert = 'Bạn có chắc chắn trở lại ko?',
     String title = 'Nạp tiền qua VNPay',
     String iconBackName = 'AppIcon',
