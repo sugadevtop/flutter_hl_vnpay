@@ -2,7 +2,7 @@ group 'com.hlsolutions.flutter_hl_vnpay.flutter_hl_vnpay'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '2.1.0'
+    ext.kotlin_version = '1.9.22'
     repositories {
         google()
         jcenter()
