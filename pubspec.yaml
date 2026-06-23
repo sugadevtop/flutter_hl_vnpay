@@ -31,7 +31,6 @@ flutter:
         pluginClass: FlutterHlVnpayPlugin
       ios:
         pluginClass: FlutterHlVnpayPlugin
-        sharedDarwinSource: true
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
