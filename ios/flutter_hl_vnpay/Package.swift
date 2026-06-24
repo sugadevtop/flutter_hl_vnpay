@@ -1,4 +1,3 @@
-// swift-tools-version: 5.9
 
 import PackageDescription
 
@@ -13,10 +12,20 @@ let package = Package(
             targets: ["flutter_hl_vnpay"]
         )
     ],
+    dependencies: [
+        .package(
+            name: "FlutterFramework",
+            path: "../FlutterFramework"
+        )
+    ],
     targets: [
         .target(
             name: "flutter_hl_vnpay",
             dependencies: [
+                .product(
+                    name: "FlutterFramework",
+                    package: "FlutterFramework"
+                ),
                 "CallAppSDK"
             ],
             path: "Sources/flutter_hl_vnpay",
