@@ -9,7 +9,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "flutter_hl_vnpay",
+            name: "flutter-hl-vnpay",
             targets: ["flutter_hl_vnpay"]
         )
     ],
